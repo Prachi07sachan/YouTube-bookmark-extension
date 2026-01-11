@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Bookmark",
+  "version": "1.0",
+  "description": "Bookmark specific timestamps in YouTube videos and jump to them instantly",
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["trash.png", "YTICON.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube Bookmark - Save and jump to video timestamps"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <svg class="youtube-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="ytRedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#FF0000;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#CC0000;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+    
+      <circle cx="50" cy="50" r="48" fill="url(#ytRedGradient)"/>
+      
+      <rect x="28" y="35" width="44" height="30" rx="6" fill="white"/>
+      
+      <polygon points="48,43 48,57 60,50" fill="#FF0000"/>
+    </svg>
+    <h3>YouTube Bookmarks</h3>
+  </div>
+  <div class="container">
+    <button id="add" class="add-btn">+ Add Bookmark</button>
+    <div id="status" class="status"></div>
+    <ul id="list"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
