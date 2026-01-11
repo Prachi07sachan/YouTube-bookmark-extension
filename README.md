@@ -1,6 +1,6 @@
 # 🎬 YouTube Timestamp Bookmark Chrome Extension
 
-A lightweight Chrome extension that helps users save and manage important moments in YouTube videos. With one click, users can bookmark the current timestamp and instantly return to any saved moment, making video learning and content review faster and more efficient.
+A  Chrome extension that helps users save and manage important moments in YouTube videos. With one click, users can bookmark the current timestamp and instantly return to any saved moment, making video learning and content review faster and more efficient.
 
 ## 🚀 Features
 - Save current YouTube video timestamp
