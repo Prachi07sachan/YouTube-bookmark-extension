@@ -192,3 +192,74 @@ body {
 #list::-webkit-scrollbar-thumb:hover {
   background: #cc0000;
 }
+
+.dark-toggle {
+  margin-left: auto;
+  width: 46px;
+  height: 24px;
+  position: relative;
+}
+
+.dark-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #111;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.dark-slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dark-toggle input:checked + .dark-slider {
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+}
+
+.dark-toggle input:checked + .dark-slider::before {
+  transform: translateX(22px);
+}
+body.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+body.dark .header {
+  background: #111;
+  border-bottom: 3px solid #333;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+}
+
+body.dark .bookmark-item {
+  background: #2a2a2a;
+}
+
+body.dark .bookmark-item:hover {
+  background: #333;
+}
+
+body.dark .video-header {
+  background: #2a2a2a;
+  color: #ddd;
+}
+
+body.dark .delete-btn {
+  background: #333;
+}
