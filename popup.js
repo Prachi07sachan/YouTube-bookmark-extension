@@ -155,8 +155,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (allBookmarks.length === 0) {
-        bookmarkList.innerHTML =
-          "<li style='color:#999;padding:10px'>No bookmarks yet. Add one!</li>";
+        bookmarkList.innerHTML = `
+      <li class="empty-state">
+      <span class="emoji">🎬</span>
+      <div>No timestamps saved yet.</div>
+      <div>Start bookmarking!</div>
+      </li>
+      `;
         return;
       }
 
