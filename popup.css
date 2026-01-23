@@ -263,3 +263,20 @@ body.dark .video-header {
 body.dark .delete-btn {
   background: #333;
 }
+
+.empty-state {
+  text-align: center;
+  padding: 24px 10px;
+  color: #777;
+  font-size: 13px;
+}
+
+.empty-state .emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+body.dark .empty-state {
+  color: #aaa;
+}
